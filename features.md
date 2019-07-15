@@ -157,9 +157,19 @@
 `POST /sys/wrapping/unwrap`
 
 
+## vault.gcpLogin
+
+`POST /auth/{{mount_point}}{{^mount_point}}gcp{{/mount_point}}/login`
+
+
 ## vault.githubLogin
 
 `POST /auth/{{mount_point}}{{^mount_point}}github{{/mount_point}}/login`
+
+
+## vault.kubernetesLogin
+
+`POST /auth/kubernetes/login`
 
 
 ## vault.userpassLogin
@@ -330,11 +340,6 @@
 ## vault.approleLogin
 
 `POST /auth/{{mount_point}}{{^mount_point}}approle{{/mount_point}}/login`
-
-
-## vault.kubernetesLogin
-
-`POST /auth/kubernetes/login`
 
 
 ## vault.health
